@@ -3,9 +3,14 @@
     <string name="start_game">Start</string>
     <string name="settings_game">Settings</string>
     <string name="exit_game">Exit</string>
-    <string name="developers">Developers: Bazarnov D. and Fokina E.</string>
+    <string name="developer_one">Developers: Bazarnov D.</string>
+    <string name="developer_two">and Fokina E.</string>
     <string name="group">Group: A-08m-24</string>
     <string name="level">Volume level</string>
     <string name="theme">Theme</string>
     <string name="back">Back</string>
+    <string name="select">Select difficulty</string>
+    <string name="image">Image selection</string>
+    <string name="next">Next</string>
+    <string name="down">Down</string>
 </resources>

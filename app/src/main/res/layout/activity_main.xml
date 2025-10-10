@@ -42,24 +42,42 @@
             android:layout_width="200sp"
             android:layout_height="match_parent"
             android:layout_marginBottom="15sp"
+            android:backgroundTint="#C76767"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/marmelad"
             android:text="@string/start_game"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:strokeColor="#AB524B"
+            app:strokeWidth="4sp" />
 
         <Button
             android:id="@+id/buttonset"
             android:layout_width="200sp"
             android:layout_height="match_parent"
             android:layout_marginBottom="15sp"
+            android:backgroundTint="#C76767"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/marmelad"
             android:text="@string/settings_game"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:strokeColor="#AB524B"
+            app:strokeWidth="4sp" />
 
         <Button
             android:id="@+id/buttonexit"
             android:layout_width="200sp"
             android:layout_height="match_parent"
             android:layout_marginBottom="15sp"
+            android:backgroundTint="#C76767"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/marmelad"
             android:text="@string/exit_game"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:strokeColor="#AB524B"
+            app:strokeWidth="4sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#3F3F3F"
+    app:layoutDescription="@xml/activity_start_scene"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="311dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="148dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttondown"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#BF6365"
+            android:drawableTint="#894F4F"
+            android:fontFamily="@font/marmelad"
+            android:minHeight="60dp"
+            android:shadowColor="#B16565"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="#8A4848"
+            app:strokeColor="#5F3D3D"
+            tools:text="@string/down" />
+
+        <Button
+            android:id="@+id/buttonnext"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25sp"
+            android:layout_weight="1"
+            android:backgroundTint="#BF6365"
+            android:drawableTint="#894F4F"
+            android:fontFamily="@font/marmelad"
+            android:minHeight="60dp"
+            android:shadowColor="#B16565"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="#8A4848"
+            app:strokeColor="#5F3D3D"
+            tools:text="@string/next" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/marmelad"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/select" />
+
+    <SeekBar
+        android:id="@+id/seekBardiff"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="256dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:max="2"
+        android:progressBackgroundTint="#834D4D"
+        android:progressBackgroundTintMode="add"
+        android:progressTint="#874C4C"
+        android:secondaryProgressTint="#854F4F"
+        android:thumbTint="#CE8080"
+        android:tickMarkTint="#613A3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textselect" />
+
+    <TextView
+        android:id="@+id/textimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/marmelad"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBardiff"
+        tools:text="@string/image" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="142dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textimage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
