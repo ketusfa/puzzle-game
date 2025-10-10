@@ -12,59 +12,68 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="180dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/marmelad"
+        android:text="@string/settings_game"
         android:textColor="#1A1818"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/settings_game" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="216dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="43dp"
+        android:id="@+id/seekBarvol"
+        android:layout_width="248dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="23dp"
+        android:progressBackgroundTint="#5D2E2E"
+        android:progressTint="#834949"
+        android:thumbTint="#C56363"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="135dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/marmelad"
         android:foregroundGravity="center"
+        android:text="@string/level"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/seekBar"
-        app:layout_constraintHorizontal_bias="0.701"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:text="@string/level" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchtheme"
-        android:layout_width="266dp"
-        android:layout_height="49dp"
+        android:layout_width="164dp"
+        android:layout_height="56dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="24dp"
+        android:buttonTintMode="add"
         android:fontFamily="@font/marmelad"
+        android:text="@string/theme"
         android:textColor="#141313"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        android:text="@string/theme" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBarvol"
+        app:thumbTint="#C56565"
+        app:thumbTintMode="src_atop"
+        app:trackTint="#954D4D" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -74,10 +83,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textmainset"
-        app:layout_constraintVertical_bias="0.044">
+        app:layout_constraintVertical_bias="0.074">
 
         <TextView
             android:id="@+id/textdev"
@@ -86,9 +95,20 @@
             android:layout_marginBottom="10sp"
             android:fontFamily="@font/marmelad"
             android:gravity="center"
+            android:text="@string/developer_one"
             android:textColor="#141212"
-            android:textSize="20sp"
-            android:text="@string/developers" />
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/marmelad"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:text="@string/developer_two" />
 
         <TextView
             android:id="@+id/textgroup"
@@ -97,9 +117,9 @@
             android:layout_marginBottom="10sp"
             android:fontFamily="@font/marmelad"
             android:gravity="center"
+            android:text="@string/group"
             android:textColor="#141212"
-            android:textSize="20sp"
-            android:text="@string/group" />
+            android:textSize="22sp" />
     </LinearLayout>
 
     <Button
@@ -107,10 +127,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
+        android:backgroundTint="#AF6565"
         android:fontFamily="@font/marmelad"
         android:gravity="center"
         android:text="@string/back"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

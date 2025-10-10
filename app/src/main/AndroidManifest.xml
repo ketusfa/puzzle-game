@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PuzzlesGame">
         <activity
+            android:name=".StartActivity"
+            android:exported="false" />
+        <activity
             android:name=".SettingActivity"
             android:exported="false" />
         <activity

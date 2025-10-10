@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 .setTitle("Exit")
                 .setMessage("Are you sure you want to exit the game?")
                 .setPositiveButton("Yes") { _, _ ->
-                    finish()
+                    finishAffinity()
                 }
                 .setNegativeButton("No") { dialog, _ ->
                     dialog.dismiss()
