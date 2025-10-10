@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">puzzles game</string>
+    <string name="start_game">Start</string>
+    <string name="settings_game">Settings</string>
+    <string name="exit_game">Exit</string>
+    <string name="developers">Developers: Bazarnov D. and Fokina E.</string>
+    <string name="group">Group: A-08m-24</string>
+    <string name="level">Volume level</string>
+    <string name="theme">Theme</string>
+    <string name="back">Back</string>
+</resources>
