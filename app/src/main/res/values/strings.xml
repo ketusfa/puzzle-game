@@ -13,4 +13,6 @@
     <string name="image">Image selection</string>
     <string name="next">Next</string>
     <string name="down">Down</string>
+    <string name="menu">Menu</string>
+    <string name="start">Start</string>
 </resources>
