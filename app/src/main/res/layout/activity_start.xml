@@ -3,45 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:backgroundTint="#3F3F3F"
+    android:visibility="visible"
     app:layoutDescription="@xml/activity_start_scene"
     tools:context=".StartActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         style="?android:attr/buttonBarStyle"
-        android:layout_width="311dp"
-        android:layout_height="95dp"
+        android:layout_width="309dp"
+        android:layout_height="79dp"
         android:layout_marginStart="77dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="77dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="150dp"
         android:background="@android:color/transparent"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textimage"
+        app:layout_constraintVertical_bias="0.202">
 
         <Button
             android:id="@+id/buttondown"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="137dp"
+            android:layout_width="143dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5sp"
+            android:layout_marginEnd="0sp"
             android:layout_weight="1"
             android:backgroundTint="#BF6365"
             android:drawableTint="#894F4F"
             android:fontFamily="@font/marmelad"
             android:minHeight="60dp"
             android:shadowColor="#B16565"
+            android:text="@string/down"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
             app:rippleColor="#8A4848"
-            app:strokeColor="#5F3D3D"
-            tools:text="@string/down" />
+            app:strokeColor="#5F3D3D" />
 
         <Button
             android:id="@+id/buttonnext"
@@ -55,13 +59,13 @@
             android:fontFamily="@font/marmelad"
             android:minHeight="60dp"
             android:shadowColor="#B16565"
+            android:text="@string/next"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
             app:rippleColor="#8A4848"
-            app:strokeColor="#5F3D3D"
-            tools:text="@string/next" />
+            app:strokeColor="#5F3D3D" />
     </LinearLayout>
 
     <TextView
@@ -70,12 +74,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
         android:fontFamily="@font/marmelad"
+        android:text="@string/select"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/select" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBardiff"
@@ -100,25 +104,66 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/marmelad"
+        android:text="@string/image"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBardiff"
-        tools:text="@string/image" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBardiff" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="142dp"
+        android:id="@+id/imageselect"
+        android:layout_width="326dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
         android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textimage"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/one" />
+
+    <Button
+        android:id="@+id/buttonst"
+        android:layout_width="151dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#BF6365"
+        android:fontFamily="@font/marmelad"
+        android:text="@string/start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toEndOf="@+id/buttonst"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.968"
+        app:rippleColor="#8A4848"
+        app:strokeColor="#5F3D3D" />
+
+    <Button
+        android:id="@+id/buttonmenu"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#BF6365"
+        android:fontFamily="@font/marmelad"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="#8A4848"
+        app:strokeColor="#5F3D3D"
+        android:text="@string/menu" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
